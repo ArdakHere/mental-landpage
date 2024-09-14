@@ -1,5 +1,6 @@
 import React, { useState, forwardRef } from 'react';
 import subscribe from '../assets/icons_images/subscribe.png';
+import VideoPlayer from './ComponentDemoVideo';
 
 const ComponentNine = forwardRef((props, ref) => {
     const [email, setEmail] = useState('');

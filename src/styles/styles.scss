@@ -6,7 +6,7 @@
     width: 100%;
     color-scheme: light dark;
     color: rgba(0, 0, 0, 0.87);
-    background-color: #1e1e1e;
+    background-color: #ffffff;
 }
 
 @font-face {
@@ -522,3 +522,19 @@ body {
     opacity: 1;
     transform: translateY(0); /* Move the section to its original position */
 }
+
+// Video Demontration 
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .video-player {
+    max-width: 95%;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  

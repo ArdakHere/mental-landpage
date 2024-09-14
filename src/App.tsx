@@ -12,6 +12,7 @@ import ComponentEight from './components/ComponentEight';
 import ComponentNine from './components/ComponentNine';
 import ComponentSeven from './components/ComponentSeven';
 import ComponentZero from './components/ComponentZero';
+import ComponentDemoVideo from './components/ComponentDemoVideo';
 import LogoOutro from './components/LogoOutro';
 
 function App() {
@@ -43,7 +44,6 @@ function App() {
       <div style={{ height: '60px' }}></div>
       <ComponentNine ref={componentNineRef} /> 
       <div style={{ height: '60px' }}></div>
-
       <LogoOutro />
     </>
   );

@@ -1,3 +1,4 @@
+import VideoPlayer from "./ComponentDemoVideo";
 
 const ComponentSeven = () => {  
     return (
@@ -15,6 +16,11 @@ const ComponentSeven = () => {
                     <div style={{width: '300px', fontStyle: 'italic'}}>I tried to chat with him in three languages, everything is working great for me. <br/> (c) Laura</div>
                 </div>
             </div>
+            <h1 style={{scale: '1.2'}}>Video Demonstration</h1>
+            <div style={{scale: '1', fontSize: '22px'}}>See what we have developed so far</div>
+
+            <VideoPlayer />
+
         </div>
     );
 }
