@@ -50,7 +50,6 @@ const ComponentNine = forwardRef((props, ref) => {
     };
     
     
-    
     return (
         <div ref={ref} className="component-nine-main"> 
             <h1 style={{scale: '1'}}>Ready to Revolutionize Your Mental Health Experience?</h1>
