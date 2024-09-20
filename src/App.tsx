@@ -14,6 +14,7 @@ import ComponentSeven from './components/ComponentSeven';
 import ComponentZero from './components/ComponentZero';
 import ComponentDemoVideo from './components/ComponentDemoVideo';
 import LogoOutro from './components/LogoOutro';
+import ComponentBusContacts from './components/ComponentBusContacts';
 
 function App() {
   const componentNineRef = useRef(null);
@@ -22,9 +23,15 @@ function App() {
     componentNineRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const componentBusContactsRef = useRef(null);
+
+  const scrollToComponentBusContacts = () => {
+    componentBusContactsRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
-      <ComponentOne onNewsletterClick={scrollToComponentNine} />
+      <ComponentOne onNewsletterClick={scrollToComponentNine} onBusinessContactsClick={scrollToComponentBusContacts} />
       <div style={{ height: '60px' }}></div>
       <ComponentZero />
       <div style={{ height: '60px' }}></div>
@@ -43,6 +50,8 @@ function App() {
       <ComponentSeven />
       <div style={{ height: '60px' }}></div>
       <ComponentNine ref={componentNineRef} /> 
+      <div style={{ height: '60px' }}></div>
+      <ComponentBusContacts ref={componentBusContactsRef}/>
       <div style={{ height: '60px' }}></div>
       <LogoOutro />
     </>

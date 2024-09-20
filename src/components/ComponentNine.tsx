@@ -54,7 +54,7 @@ const ComponentNine = forwardRef((props, ref) => {
     return (
         <div ref={ref} className="component-nine-main"> 
             <h1 style={{scale: '1'}}>Ready to Revolutionize Your Mental Health Experience?</h1>
-            <div style={{height: '25px'}}></div>
+            <div style={{height: '0px'}}></div>
             <div style={{fontSize: '28px'}}>Subscribe to our Newsletter</div>
             <div style={{fontSize: '20px'}}>(platform development updates, feedback, special offers and more)</div>
 
@@ -72,6 +72,7 @@ const ComponentNine = forwardRef((props, ref) => {
 
             {status === 'success' && <p style={{ color: 'green' }}>Thank you for subscribing!</p>}
             {status === 'error' && <p style={{ color: 'red' }}>Subscription failed. Please try again.</p>}
+            
         </div>
     );
 });

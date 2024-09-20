@@ -1,7 +1,7 @@
 import React from 'react';
 import TypingAnimation from './TypingAnimation';
 
-const ComponentOne = ({ onNewsletterClick }) => {
+const ComponentOne = ({ onNewsletterClick, onBusinessContactsClick }) => {
   return (
     <div className="component-one-main">
       <div className="logo-container-white">
@@ -23,6 +23,9 @@ const ComponentOne = ({ onNewsletterClick }) => {
       <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', gap: '25px' }}>
         <div className="component-one-main-button-right" onClick={onNewsletterClick}>
           <h3>Newsletter</h3>
+        </div>
+        <div className="component-one-main-button-right" onClick={onBusinessContactsClick}>
+          <h3>Business Contacts</h3>
         </div>
       </div>
     </div>
